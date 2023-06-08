@@ -47,8 +47,8 @@ class AutomatoFinitoDeterministico:
                 if not transicionou:    # indica impasse
                     print()
                 if self.estado_atual in self.estados_finais:
+                    print(f"⊢ ({self.estado_atual}, {texto[posicao_atual]})")
                     self.ocorrencias.append(posicao_ocorrencia + 1) # começando da primeira letra de "computador"
-                    print()
             else:
                 print()
             posicao_atual += 1
